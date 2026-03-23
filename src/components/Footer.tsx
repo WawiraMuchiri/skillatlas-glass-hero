@@ -1,3 +1,4 @@
+import { Linkedin } from "lucide-react";
 import BrandLogo from "@/components/BrandLogo";
 
 const Footer = () => (
@@ -10,25 +11,40 @@ const Footer = () => (
             Empowering learners worldwide to build skills that matter and launch meaningful careers.
           </p>
         </div>
-        {[
-          { title: "Platform", links: ["Programs", "Courses", "Mentorship", "Jobs"] },
-          { title: "Company", links: ["About", "Blog", "Careers", "Press"] },
-          { title: "Support", links: ["Help Center", "Contact", "Privacy", "Terms"] },
-        ].map((col) => (
-          <div key={col.title}>
-            <h4 className="font-display font-semibold text-primary-foreground mb-4">{col.title}</h4>
-            <ul className="space-y-2">
-              {col.links.map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+
+        {/* Resources */}
+        <div>
+          <h4 className="font-display font-semibold text-primary-foreground mb-4">Resources</h4>
+          <ul className="space-y-2">
+            <li><a href="#" className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">Blog</a></li>
+            <li><a href="#" className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">FAQs</a></li>
+          </ul>
+        </div>
+
+        {/* Legal */}
+        <div>
+          <h4 className="font-display font-semibold text-primary-foreground mb-4">Legal</h4>
+          <ul className="space-y-2">
+            <li><a href="#" className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">Privacy</a></li>
+            <li><a href="#" className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">Terms</a></li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div>
+          <h4 className="font-display font-semibold text-primary-foreground mb-4">Contact</h4>
+          <ul className="space-y-2">
+            <li><a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">WhatsApp</a></li>
+            <li><a href="mailto:hello@skillatlas.com" className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">Email</a></li>
+            <li>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                <Linkedin size={18} />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+
       <div className="border-t border-primary-foreground/10 pt-8 text-center">
         <p className="text-sm text-primary-foreground/40">
           © {new Date().getFullYear()} SkillAtlas. All rights reserved.
