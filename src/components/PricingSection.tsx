@@ -13,7 +13,7 @@ const billingOptions: { key: BillingPeriod; label: string }[] = [
 ];
 
 const proPrice: Record<BillingPeriod, { price: string; note?: string }> = {
-  monthly: { price: "$4", note: "/month" },
+  monthly: { price: "$3", note: "/month" },
   quarterly: { price: "$10", note: " — Save 17%" },
   biannual: { price: "$18", note: " — Save 25%" },
   annual: { price: "$40", note: " — Save 44%" },
@@ -73,10 +73,10 @@ const PricingSection = ({ onGetStarted }: PricingSectionProps) => {
             className="rounded-2xl border border-border bg-card p-8 flex flex-col"
           >
             <h3 className="font-display text-xl font-bold text-foreground mb-1">The Starter</h3>
-            <p className="text-muted-foreground text-sm mb-6">Free</p>
+            <p className="text-muted-foreground text-sm mb-6">30-Day Free Trial</p>
             <div className="mb-8">
               <span className="font-display text-4xl font-bold text-foreground">$0</span>
-              <span className="text-muted-foreground ml-1">/ forever</span>
+              <span className="text-muted-foreground ml-1">/ 30 days</span>
             </div>
             <ul className="space-y-3 mb-10 flex-1">
               {["3 CV Optimizations/mo", "Basic Skill Mapping", "5 Job Matches/mo", "Weekly Market Trend Insights"].map(

@@ -27,8 +27,8 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-3xl mx-auto"
         >
-          <span className="inline-block glass-panel rounded-full px-5 py-2 text-sm font-medium text-primary-foreground mb-8">
-            🚀 Join 10,000+ learners transforming their careers
+          <span className="inline-block glass-panel rounded-full px-5 py-2 text-sm font-medium text-foreground mb-8">
+            Join 10,000+ learners transforming their careers
           </span>
 
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6">
@@ -49,13 +49,6 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
             >
               Get Started for Free
               <ArrowRight size={20} />
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-lg px-8 py-6 border-primary-foreground/60 text-primary-foreground bg-transparent hover:bg-primary-foreground/10"
-            >
-              Explore Programs
             </Button>
           </div>
         </motion.div>
