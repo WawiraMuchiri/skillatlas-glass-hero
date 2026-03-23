@@ -1,3 +1,5 @@
+import logo from "@/assets/logo.png";
+
 const Footer = () => (
   <footer className="bg-primary py-16">
     <div className="container mx-auto px-6">

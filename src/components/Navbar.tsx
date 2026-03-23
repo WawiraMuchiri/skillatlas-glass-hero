@@ -15,8 +15,8 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-panel-strong">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="/" className="font-display text-2xl font-bold tracking-tight text-primary-foreground">
-          Skill<span className="text-accent">Atlas</span>
+        <a href="/">
+          <img src={logo} alt="SkillAtlas" className="h-8" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
