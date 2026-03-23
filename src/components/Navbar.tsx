@@ -25,11 +25,11 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
         <div className="hidden md:flex items-center gap-8">
           {NAV_ITEMS.map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
-              className="text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              key={item.label}
+              href={item.href}
+              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
             >
-              {item}
+              {item.label}
             </a>
           ))}
           <Button variant="cta" size="sm" onClick={onGetStarted}>
