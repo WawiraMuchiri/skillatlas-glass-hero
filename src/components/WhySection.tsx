@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const WhySection = () => (
-  <section className="py-24 bg-muted/50">
+  <section id="about-us" className="py-24 bg-muted/50">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
