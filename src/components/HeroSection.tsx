@@ -27,7 +27,7 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-3xl mx-auto"
         >
-          <span className="inline-block glass-panel rounded-full px-5 py-2 text-sm font-medium text-foreground mb-8">
+          <span className="inline-block glass-panel rounded-full px-5 py-2 text-sm font-bold text-foreground mb-8">
             Join 10,000+ learners transforming their careers
           </span>
 
