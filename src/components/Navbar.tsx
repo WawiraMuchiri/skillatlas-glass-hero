@@ -18,7 +18,7 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass-panel-strong">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-foreground/5">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <div className="mr-8">
           <BrandLogo />
