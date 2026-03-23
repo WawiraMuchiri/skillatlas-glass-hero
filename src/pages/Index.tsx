@@ -20,6 +20,7 @@ const Index = () => {
       <HeroSection onGetStarted={openSignUp} />
       <WhySection />
       <FeaturesSection />
+      <HowItWorksSection />
       <StatsSection />
       <TestimonialsSection />
       <CTASection onGetStarted={openSignUp} />
