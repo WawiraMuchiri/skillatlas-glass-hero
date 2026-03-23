@@ -46,12 +46,12 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
         <div className="md:hidden glass-panel-strong px-6 pb-6 flex flex-col gap-4">
           {NAV_ITEMS.map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
-              className="text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground"
+              key={item.label}
+              href={item.href}
+              className="text-sm font-medium text-foreground/80 hover:text-foreground"
               onClick={() => setOpen(false)}
             >
-              {item}
+              {item.label}
             </a>
           ))}
           <Button variant="cta" size="sm" className="w-full" onClick={() => { setOpen(false); onGetStarted(); }}>
