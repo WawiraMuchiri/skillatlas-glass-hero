@@ -20,14 +20,14 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
       {/* Subtle overlay — keeps image vibrant */}
       <div className="absolute inset-0 bg-primary/15" />
 
-      <div className="relative z-10 container mx-auto px-6 pt-28 pb-20 text-center">
+      <div className="relative z-10 container mx-auto px-6 pt-28 pb-20">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-3xl mx-auto"
+          className="max-w-3xl mx-auto flex flex-col items-center"
         >
-          <span className="inline-block glass-panel rounded-full px-5 py-2 text-sm font-bold text-foreground mb-8">
+          <span className="self-start glass-panel rounded-full px-5 py-2 text-sm font-bold text-foreground mb-4">
             Join 10,000+ learners transforming their careers
           </span>
 
