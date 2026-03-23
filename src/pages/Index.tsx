@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import WhySection from "@/components/WhySection";
 import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
@@ -15,6 +16,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar onGetStarted={openSignUp} />
       <HeroSection onGetStarted={openSignUp} />
+      <WhySection />
       <StatsSection />
       <TestimonialsSection />
       <CTASection onGetStarted={openSignUp} />
