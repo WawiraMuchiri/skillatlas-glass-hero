@@ -2,7 +2,11 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const CTASection = () => (
+interface CTASectionProps {
+  onGetStarted: () => void;
+}
+
+const CTASection = ({ onGetStarted }: CTASectionProps) => (
   <section className="py-24">
     <div className="container mx-auto px-6">
       <motion.div
@@ -20,7 +24,7 @@ const CTASection = () => (
           <p className="text-primary-foreground/80 max-w-xl mx-auto mb-10 text-lg">
             Join a thriving community of learners and unlock courses, mentorship, and career opportunities—completely free to start.
           </p>
-          <Button variant="cta" size="lg" className="text-lg px-10 py-6 gap-2">
+          <Button variant="cta" size="lg" className="text-lg px-10 py-6 gap-2" onClick={onGetStarted}>
             Get Started for Free
             <ArrowRight size={20} />
           </Button>
