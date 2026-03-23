@@ -7,7 +7,12 @@ interface NavbarProps {
   onGetStarted: () => void;
 }
 
-const NAV_ITEMS = ["Features", "Success Stories", "About Us"];
+const NAV_ITEMS = [
+  { label: "Features", href: "#features" },
+  { label: "Success Stories", href: "#success-stories" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "About Us", href: "#about-us" },
+];
 
 const Navbar = ({ onGetStarted }: NavbarProps) => {
   const [open, setOpen] = useState(false);

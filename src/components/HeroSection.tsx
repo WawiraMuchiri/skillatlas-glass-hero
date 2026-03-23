@@ -50,13 +50,6 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
               Get Started for Free
               <ArrowRight size={20} />
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-lg px-8 py-6 border-primary-foreground/60 text-primary-foreground bg-transparent hover:bg-primary-foreground/10"
-            >
-              Explore Programs
-            </Button>
           </div>
         </motion.div>
       </div>
