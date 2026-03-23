@@ -19,13 +19,13 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar onGetStarted={openSignUp} />
       <HeroSection onGetStarted={openSignUp} />
-      <div id="success-stories">
-        <StatsSection />
-        <TestimonialsSection />
-      </div>
+      <StatsSection />
       <WhySection />
       <FeaturesSection />
       <HowItWorksSection />
+      <div id="success-stories">
+        <TestimonialsSection />
+      </div>
       <PricingSection onGetStarted={openSignUp} />
       <CTASection onGetStarted={openSignUp} />
       <Footer />
