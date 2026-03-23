@@ -2,7 +2,13 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const Navbar = () => {
+interface NavbarProps {
+  onGetStarted: () => void;
+}
+
+const NAV_ITEMS = ["Features", "Success Stories", "About Us"];
+
+const Navbar = ({ onGetStarted }: NavbarProps) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -13,16 +19,16 @@ const Navbar = () => {
         </a>
 
         <div className="hidden md:flex items-center gap-8">
-          {["Programs", "Courses", "Community", "About"].map((item) => (
+          {NAV_ITEMS.map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
               className="text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors"
             >
               {item}
             </a>
           ))}
-          <Button variant="cta" size="sm">
+          <Button variant="cta" size="sm" onClick={onGetStarted}>
             Get Started
           </Button>
         </div>
@@ -34,17 +40,17 @@ const Navbar = () => {
 
       {open && (
         <div className="md:hidden glass-panel-strong px-6 pb-6 flex flex-col gap-4">
-          {["Programs", "Courses", "Community", "About"].map((item) => (
+          {NAV_ITEMS.map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
               className="text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground"
               onClick={() => setOpen(false)}
             >
               {item}
             </a>
           ))}
-          <Button variant="cta" size="sm" className="w-full">
+          <Button variant="cta" size="sm" className="w-full" onClick={() => { setOpen(false); onGetStarted(); }}>
             Get Started
           </Button>
         </div>
