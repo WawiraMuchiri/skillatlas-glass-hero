@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { Users, BookOpen, Briefcase } from "lucide-react";
 
 const stats = [
@@ -36,24 +36,40 @@ function formatNumber(n: number) {
 }
 
 function StatCard({ icon: Icon, value, display, label, delay }: typeof stats[number]) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
-  const count = useCountUp(value, 2000, isInView);
+  const ref = useRef<HTMLDivElement>(null);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setHasAnimated(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  const count = useCountUp(value, 2000, hasAnimated);
 
   return (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6, delay }}
+      animate={hasAnimated ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
       className="flex flex-col items-center gap-3 px-6 py-8"
     >
       <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary">
         <Icon size={28} />
       </div>
       <p className="font-display text-4xl md:text-5xl font-bold text-primary">
-        {isInView ? `${formatNumber(count)}+` : "0"}
+        {hasAnimated ? `${formatNumber(count)}+` : "0"}
       </p>
       <p className="text-muted-foreground text-sm font-medium tracking-wide uppercase">
         {label}
