@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
+import BrandLogo from "@/components/BrandLogo";
 
 interface NavbarProps {
   onGetStarted: () => void;
@@ -15,9 +15,7 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-panel-strong">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="/">
-          <img src={logo} alt="SkillAtlas" className="h-9" />
-        </a>
+        <BrandLogo />
 
         <div className="hidden md:flex items-center gap-8">
           {NAV_ITEMS.map((item) => (
