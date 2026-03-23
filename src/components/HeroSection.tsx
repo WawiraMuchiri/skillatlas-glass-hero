@@ -25,9 +25,9 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-3xl mx-auto text-center"
+          className="max-w-3xl mx-auto flex flex-col items-center"
         >
-          <span className="inline-block glass-panel rounded-full px-5 py-2 text-sm font-bold text-foreground mb-4 ml-0 mr-auto text-left">
+          <span className="self-start glass-panel rounded-full px-5 py-2 text-sm font-bold text-foreground mb-4">
             Join 10,000+ learners transforming their careers
           </span>
 
