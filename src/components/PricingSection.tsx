@@ -13,7 +13,7 @@ const billingOptions: { key: BillingPeriod; label: string }[] = [
 ];
 
 const proPrice: Record<BillingPeriod, { price: string; note?: string }> = {
-  monthly: { price: "$4", note: "/month" },
+  monthly: { price: "$3", note: "/month" },
   quarterly: { price: "$10", note: " — Save 17%" },
   biannual: { price: "$18", note: " — Save 25%" },
   annual: { price: "$40", note: " — Save 44%" },
