@@ -23,7 +23,6 @@ const Index = () => {
       <WhySection />
       <FeaturesSection />
       <HowItWorksSection />
-      <StatsSection />
       <TestimonialsSection />
       <PricingSection onGetStarted={openSignUp} />
       <CTASection onGetStarted={openSignUp} />
