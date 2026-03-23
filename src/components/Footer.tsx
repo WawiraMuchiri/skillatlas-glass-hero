@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
         <div>
           <a href="/">
-            <img src={logo} alt="SkillAtlas" className="h-8 brightness-0 invert" />
+            <img src={logo} alt="SkillAtlas" className="h-9" />
           </a>
           <p className="text-primary-foreground/60 mt-4 text-sm leading-relaxed">
             Empowering learners worldwide to build skills that matter and launch meaningful careers.
