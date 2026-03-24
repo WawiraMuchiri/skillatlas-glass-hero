@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Linkedin } from "lucide-react";
 import foundingTeam from "@/assets/founding-team.png";
+
+const founders = [
+  { name: "Linus Langat", url: "https://linkedin.com/in/linuslangat" },
+  { name: "Rosalyne Muchiri", url: "https://linkedin.com/in/rosalyne-muchiri-357050186" },
+  { name: "Peter Masudi", url: "https://linkedin.com/in/peter-kemei-71745b215" },
+];
 
 const WhySection = () => (
   <section id="about-us" className="py-24 bg-muted/50">
