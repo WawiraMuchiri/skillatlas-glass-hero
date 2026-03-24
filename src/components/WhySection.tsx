@@ -46,12 +46,12 @@ const WhySection = () => (
           transition={{ duration: 0.7, delay: 0.2 }}
           className="order-2 flex flex-col items-center md:order-1"
         >
-          <div className="w-full max-w-md rounded-[10px] bg-background px-6 pt-8 pb-8 shadow-lg ring-1 ring-border/60">
+          <div className="w-full max-w-md rounded-[10px] bg-background p-5 shadow-lg ring-1 ring-border/60">
             <div className="grid grid-cols-3 items-start justify-center gap-4">
               {founders.map((founder) => (
                 <div
                   key={founder.name}
-                  className="flex flex-col items-center justify-center gap-y-3 text-center"
+                  className="flex flex-col items-center gap-y-2 text-center"
                 >
                   <div className="h-24 w-24 overflow-hidden rounded-full shadow-sm ring-1 ring-border/50">
                     <img
