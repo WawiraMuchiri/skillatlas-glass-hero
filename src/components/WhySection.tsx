@@ -42,9 +42,23 @@ const WhySection = () => (
               className="w-full h-auto object-cover"
             />
           </div>
-          <p className="mt-4 text-sm italic text-muted-foreground">
+          <p className="mt-3 text-sm italic text-muted-foreground">
             The minds behind SkillAtlas
           </p>
+          <div className="mt-4 flex flex-wrap justify-center gap-x-5 gap-y-2">
+            {founders.map((f) => (
+              <a
+                key={f.name}
+                href={f.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-foreground hover:text-primary transition-colors"
+              >
+                <Linkedin size={14} className="text-[#0A66C2]" />
+                {f.name}
+              </a>
+            ))}
+          </div>
         </motion.div>
 
         {/* Right — Text (shows first on mobile) */}
