@@ -35,22 +35,22 @@ const WhySection = () => (
           transition={{ duration: 0.7, delay: 0.2 }}
           className="flex flex-col items-center order-2 md:order-1"
         >
-          <div className="w-full max-w-md overflow-hidden rounded-[10px] shadow-lg bg-white">
+          <div className="w-full max-w-md rounded-[10px] shadow-lg bg-white overflow-hidden">
             <img
               src={foundingTeam}
               alt="The SkillAtlas Founding Team"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover block -mb-1"
             />
-            <div className="grid grid-cols-3 gap-2 px-4 pt-1.5 pb-3">
+            <div className="grid grid-cols-3 px-3 py-2">
               {founders.map((f) => (
                 <a
                   key={f.name}
                   href={f.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1 text-xs font-semibold text-foreground hover:text-primary transition-colors text-center leading-tight"
+                  className="flex items-center justify-center gap-1 text-[11px] font-semibold text-foreground hover:text-primary transition-colors text-center whitespace-nowrap"
                 >
-                  <Linkedin size={12} className="text-[#0A66C2] shrink-0" />
+                  <Linkedin size={11} className="text-[#0A66C2] shrink-0" />
                   {f.name}
                 </a>
               ))}
