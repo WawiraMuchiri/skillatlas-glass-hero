@@ -21,41 +21,39 @@ const WhySection = () => (
       </motion.div>
 
       <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-        {/* Left — Image */}
+        {/* Left — Text (shows first on mobile) */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="flex flex-col items-center"
-        >
-          <div className="w-full max-w-md overflow-hidden rounded-[24px] shadow-[0_8px_30px_rgba(0,51,153,0.12)] border border-[#00339919]">
-            <AspectRatio ratio={4 / 5}>
-              <img
-                src={foundingTeam}
-                alt="The SkillAtlas Founding Team"
-                className="w-full h-full object-cover object-center"
-              />
-            </AspectRatio>
-          </div>
-          <p className="mt-4 text-sm italic text-[#333333]">
-            The minds behind SkillAtlas
-          </p>
-        </motion.div>
-
-        {/* Right — Text */}
-        <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="space-y-6"
+          className="space-y-6 order-1"
         >
           <p className="text-lg text-muted-foreground leading-relaxed">
             Too many people waste months learning skills that don't match what employers actually want. They follow outdated advice, random YouTube playlists, and course recommendations that lead nowhere.
           </p>
           <p className="text-lg text-foreground font-medium leading-relaxed">
             SkillAtlas exists to fix that — by connecting your learning directly to real job market demand, so every hour you invest moves you closer to getting hired.
+          </p>
+        </motion.div>
+
+        {/* Right — Image (stacks below text on mobile) */}
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="flex flex-col items-center order-2"
+        >
+          <div className="w-full max-w-md overflow-hidden rounded-[10px] shadow-lg">
+            <img
+              src={foundingTeam}
+              alt="The SkillAtlas Founding Team"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+          <p className="mt-4 text-sm italic text-muted-foreground">
+            The minds behind SkillAtlas
           </p>
         </motion.div>
       </div>
