@@ -41,24 +41,22 @@ const WhySection = () => (
               alt="The SkillAtlas Founding Team"
               className="w-full h-auto object-cover"
             />
-            <div className="grid grid-cols-3 gap-2 px-4 py-3">
+            <div className="grid grid-cols-3 gap-2 px-4 pt-1.5 pb-3">
               {founders.map((f) => (
                 <a
                   key={f.name}
                   href={f.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center gap-1 text-xs font-semibold text-foreground hover:text-primary transition-colors text-center"
+                  className="flex items-center justify-center gap-1 text-xs font-semibold text-foreground hover:text-primary transition-colors text-center leading-tight"
                 >
-                  <span className="flex items-center gap-1">
-                    <Linkedin size={12} className="text-[#0A66C2]" />
-                    {f.name}
-                  </span>
+                  <Linkedin size={12} className="text-[#0A66C2] shrink-0" />
+                  {f.name}
                 </a>
               ))}
             </div>
           </div>
-          <p className="mt-3 text-sm italic text-muted-foreground">
+          <p className="mt-4 text-sm italic text-muted-foreground">
             The minds behind SkillAtlas
           </p>
         </motion.div>
