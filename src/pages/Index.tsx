@@ -22,6 +22,7 @@ const Index = () => {
       <HeroSection onGetStarted={openSignUp} />
       <StatsSection />
       <WhySection />
+      <OurTeamSection />
       <FeaturesSection />
       <HowItWorksSection />
       <div id="success-stories">
