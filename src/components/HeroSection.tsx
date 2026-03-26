@@ -37,7 +37,7 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
             Chart Your <span className="text-[#2dd4bf]">Future</span>.
           </h1>
 
-          <p className="text-lg md:text-xl text-[#D1D5DB] max-w-2xl mx-auto mb-10 font-body leading-relaxed drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)]">
+          <p className="text-[22px] font-normal text-[#D1D5DB] max-w-2xl mx-auto mb-10 font-body leading-relaxed drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)]">
             SkillAtlas connects you to world-class programs, curated courses, and real job opportunities—all in one platform designed for your growth.
           </p>
 
