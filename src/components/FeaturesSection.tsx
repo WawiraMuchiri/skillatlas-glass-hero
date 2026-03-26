@@ -11,7 +11,7 @@ const features = [
 ];
 
 const FeaturesSection = () => (
-  <section id="features" className="py-24">
+  <section id="features" className="py-24 bg-[#f8fffe]">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -20,7 +20,7 @@ const FeaturesSection = () => (
         transition={{ duration: 0.7 }}
         className="max-w-3xl mx-auto text-center mb-16"
       >
-        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-secondary mb-4">
+        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#0f6e56] mb-4">
           Features
         </span>
         <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
@@ -39,9 +39,9 @@ const FeaturesSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="rounded-2xl border border-border bg-card p-8 hover:shadow-lg transition-shadow"
+            className="rounded-2xl border border-[#c8f5ed] bg-card p-8 hover:shadow-lg transition-shadow"
           >
-            <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-secondary/10 text-secondary mb-5">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#e1faf5] text-[#2dd4bf] mb-5">
               <f.icon size={24} />
             </div>
             <h3 className="font-display text-lg font-semibold text-card-foreground mb-2">{f.title}</h3>
