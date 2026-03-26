@@ -17,8 +17,9 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
         width={1920}
         height={1080}
       />
-      {/* Subtle overlay — keeps image vibrant */}
-      <div className="absolute inset-0 bg-primary/50" />
+      {/* Gradient overlay — darker on left for text, fading to reveal image */}
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/70 via-primary/40 to-primary/15" />
+      <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
 
       <div className="relative z-10 container mx-auto px-6 pt-28 pb-20">
         <motion.div
