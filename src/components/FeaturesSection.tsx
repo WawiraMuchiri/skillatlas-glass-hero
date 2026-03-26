@@ -11,7 +11,7 @@ const features = [
 ];
 
 const FeaturesSection = () => (
-  <section id="features" className="py-24">
+  <section id="features" className="py-24 bg-[#f8fffe]">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
