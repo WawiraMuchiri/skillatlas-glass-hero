@@ -19,7 +19,7 @@ const HowItWorksSection = () => (
         transition={{ duration: 0.7 }}
         className="max-w-3xl mx-auto text-center mb-16"
       >
-        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-secondary mb-4">
+        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#2dd4bf] mb-4">
           How It Works
         </span>
         <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">
