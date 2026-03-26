@@ -14,7 +14,7 @@ const CTASection = ({ onGetStarted }: CTASectionProps) => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="relative overflow-hidden rounded-3xl bg-primary p-12 md:p-20 text-center"
+        className="relative overflow-hidden rounded-3xl bg-[#0f2027] p-12 md:p-20 text-center"
       >
         <div className="absolute inset-0 bg-gradient-to-br from-secondary/30 to-transparent" />
         <div className="relative z-10">
