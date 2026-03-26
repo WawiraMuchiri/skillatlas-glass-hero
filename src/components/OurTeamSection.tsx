@@ -11,6 +11,38 @@ const founders = [
 const OurTeamSection = () => (
   <section id="our-team" className="py-24 bg-[#0f2027]">
     <div className="container mx-auto px-6">
+      {/* Mission / About content */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+        className="text-center mb-12"
+      >
+        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#2dd4bf] mb-4">
+          Our Mission
+        </span>
+        <h2 className="font-display text-3xl md:text-5xl font-bold text-white">
+          Why We Built SkillAtlas
+        </h2>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        className="max-w-3xl mx-auto space-y-6 mb-24"
+      >
+        <p className="text-lg text-[rgba(255,255,255,0.6)] leading-relaxed">
+          Too many people waste months learning skills that don't match what employers actually want. They follow outdated advice, random YouTube playlists, and course recommendations that lead nowhere.
+        </p>
+        <p className="text-lg text-white font-medium leading-relaxed">
+          SkillAtlas exists to fix that — by connecting your learning directly to real job market demand, so every hour you invest moves you closer to getting hired.
+        </p>
+      </motion.div>
+
+      {/* Team content */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -20,7 +20,6 @@ const Index = () => {
       <Navbar onGetStarted={openSignUp} />
       <HeroSection onGetStarted={openSignUp} />
       <StatsSection />
-      <WhySection />
       <OurTeamSection />
       <FeaturesSection />
       <HowItWorksSection />
