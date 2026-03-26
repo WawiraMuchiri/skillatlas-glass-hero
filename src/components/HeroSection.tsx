@@ -18,8 +18,8 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
         height={1080}
       />
       {/* Gradient overlay — darker on left for text, fading to reveal image */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/70 via-primary/40 to-primary/15" />
-      <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(90deg, rgba(15,16,26,0.88) 45%, rgba(15,16,26,0.10) 100%)' }} />
+      <div className="absolute inset-0 bg-gradient-to-t from-[rgba(15,16,26,0.5)] via-transparent to-transparent" />
 
       <div className="relative z-10 container mx-auto px-6 pt-28 pb-20">
         <motion.div
@@ -45,7 +45,7 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
             <Button
               variant="cta"
               size="lg"
-              className="text-lg px-8 py-6 gap-2 text-white shadow-[0_4px_20px_rgba(34,197,94,0.4)] hover:shadow-[0_6px_28px_rgba(34,197,94,0.5)]"
+              className="text-lg px-8 py-6 gap-2 shadow-[0_4px_20px_rgba(251,191,36,0.4)] hover:shadow-[0_6px_28px_rgba(251,191,36,0.5)]"
               onClick={onGetStarted}
             >
               Get Started for Free
