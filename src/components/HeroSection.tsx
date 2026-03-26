@@ -33,8 +33,8 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
           </span>
 
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight mb-6 drop-shadow-[0_3px_12px_rgba(0,0,0,0.5)]">
-            Map Your <span className="text-accent">Skills</span>.{" "}
-            Chart Your <span className="text-accent">Future</span>.
+            Map Your <span className="text-[#2dd4bf]">Skills</span>.{" "}
+            Chart Your <span className="text-[#2dd4bf]">Future</span>.
           </h1>
 
           <p className="text-lg md:text-xl text-[#D1D5DB] max-w-2xl mx-auto mb-10 font-body leading-relaxed drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)]">
