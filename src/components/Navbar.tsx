@@ -9,9 +9,9 @@ interface NavbarProps {
 
 const NAV_ITEMS = [
   { label: "Features", href: "#features" },
-  { label: "Success Stories", href: "#success-stories" },
+  { label: "How It Works", href: "#how-it-works" },
   { label: "Pricing", href: "#pricing" },
-  { label: "About Us", href: "#about-us" },
+  { label: "Success Stories", href: "#success-stories" },
   { label: "Our Team", href: "#our-team" },
 ];
 
@@ -30,12 +30,12 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm font-bold text-white/65 hover:text-white transition-colors"
+              className="text-[14px] font-bold text-white/65 hover:text-white transition-colors"
             >
               {item.label}
             </a>
           ))}
-          <Button size="sm" className="bg-[#2dd4bf] text-[#0f2027] hover:bg-[#2dd4bf]/90 font-semibold" onClick={onGetStarted}>
+          <Button size="sm" className="bg-[#fbbf24] text-[#0f2027] hover:bg-[#fbbf24]/90 font-semibold" onClick={onGetStarted}>
             Get Started
           </Button>
         </div>
@@ -57,7 +57,7 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
               {item.label}
             </a>
           ))}
-          <Button size="sm" className="w-full bg-[#2dd4bf] text-[#0f2027] hover:bg-[#2dd4bf]/90 font-semibold" onClick={() => { setOpen(false); onGetStarted(); }}>
+          <Button size="sm" className="w-full bg-[#fbbf24] text-[#0f2027] hover:bg-[#fbbf24]/90 font-semibold" onClick={() => { setOpen(false); onGetStarted(); }}>
             Get Started
           </Button>
         </div>
