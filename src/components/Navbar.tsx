@@ -30,7 +30,7 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm font-bold text-white/65 hover:text-white transition-colors"
+              className="text-[14px] font-bold text-white/65 hover:text-white transition-colors"
             >
               {item.label}
             </a>
