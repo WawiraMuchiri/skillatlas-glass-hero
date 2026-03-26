@@ -18,7 +18,7 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
         height={1080}
       />
       {/* Gradient overlay — darker on left for text, fading to reveal image */}
-      <div className="absolute inset-0" style={{ background: 'linear-gradient(90deg, rgba(15,32,39,0.92) 45%, rgba(15,32,39,0.15) 100%)' }} />
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(90deg, rgba(15,32,39,0.75) 0%, rgba(15,32,39,0.65) 45%, rgba(15,32,39,0.05) 100%)' }} />
       <div className="absolute inset-0 bg-gradient-to-t from-[rgba(15,32,39,0.5)] via-transparent to-transparent" />
 
       <div className="relative z-10 container mx-auto px-6 pt-28 pb-20">
