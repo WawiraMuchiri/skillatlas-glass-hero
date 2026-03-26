@@ -9,7 +9,7 @@ const founders = [
 ];
 
 const OurTeamSection = () => (
-  <section id="our-team" className="py-24 bg-background">
+  <section id="our-team" className="py-24 bg-[#0f2027]">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -18,10 +18,10 @@ const OurTeamSection = () => (
         transition={{ duration: 0.7 }}
         className="text-center mb-12"
       >
-        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-secondary mb-4">
+        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#2dd4bf] mb-4">
           Meet Us
         </span>
-        <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">
+        <h2 className="font-display text-3xl md:text-5xl font-bold text-white">
           Our Team
         </h2>
       </motion.div>
