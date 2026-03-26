@@ -23,7 +23,7 @@ const FeaturesSection = () => (
         <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#0f6e56] mb-4">
           Features
         </span>
-        <h2 className="font-display text-3xl md:text-5xl font-bold text-[#2dd4bf] mb-4">
+        <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
           Everything You Need to Land the Job
         </h2>
         <p className="text-lg text-muted-foreground">

@@ -35,7 +35,7 @@ const PricingSection = ({ onGetStarted }: PricingSectionProps) => {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-[#2dd4bf] mb-4">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
             Simple, transparent pricing
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">

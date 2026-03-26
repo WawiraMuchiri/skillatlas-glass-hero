@@ -13,7 +13,7 @@ const WhySection = () => (
         <span className="inline-block text-sm font-semibold tracking-widest uppercase text-secondary mb-4">
           Our Mission
         </span>
-        <h2 className="font-display text-3xl md:text-5xl font-bold text-[#2dd4bf]">
+        <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">
           Why We Built SkillAtlas
         </h2>
       </motion.div>

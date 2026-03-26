@@ -18,7 +18,7 @@ const CTASection = ({ onGetStarted }: CTASectionProps) => (
       >
         <div className="absolute inset-0 bg-gradient-to-br from-secondary/30 to-transparent" />
         <div className="relative z-10">
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-[#2dd4bf] mb-6">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-primary-foreground mb-6">
             Ready to Start Your Journey?
           </h2>
           <p className="text-primary-foreground/80 max-w-xl mx-auto mb-10 text-lg">
