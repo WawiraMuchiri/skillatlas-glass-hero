@@ -32,7 +32,7 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
             Join 10,000+ learners transforming their careers
           </span>
 
-          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight mb-6 drop-shadow-[0_3px_12px_rgba(0,0,0,0.5)]">
+          <h1 className="font-display md:text-[72px] text-5xl sm:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-[0_3px_12px_rgba(0,0,0,0.5)]" style={{ letterSpacing: '-0.02em' }}>
             Map Your <span className="text-[#2dd4bf]">Skills</span>.{" "}
             Chart Your <span className="text-[#2dd4bf]">Future</span>.
           </h1>
