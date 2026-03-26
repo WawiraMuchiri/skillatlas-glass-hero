@@ -18,7 +18,7 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
         height={1080}
       />
       {/* Subtle overlay — keeps image vibrant */}
-      <div className="absolute inset-0 bg-primary/15" />
+      <div className="absolute inset-0 bg-primary/50" />
 
       <div className="relative z-10 container mx-auto px-6 pt-28 pb-20">
         <motion.div
