@@ -63,6 +63,9 @@ const TestimonialsSection = () => (
               <p className="font-display font-semibold text-foreground">{t.name}</p>
               <p className="text-sm text-muted-foreground">{t.role}</p>
             </div>
+            <span className="inline-block mt-4 px-4 py-1.5 text-xs font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">
+              {t.badge}
+            </span>
           </motion.div>
         ))}
       </div>
