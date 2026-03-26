@@ -12,6 +12,7 @@ const NAV_ITEMS = [
   { label: "Success Stories", href: "#success-stories" },
   { label: "Pricing", href: "#pricing" },
   { label: "About Us", href: "#about-us" },
+  { label: "Our Team", href: "#our-team" },
 ];
 
 const Navbar = ({ onGetStarted }: NavbarProps) => {
