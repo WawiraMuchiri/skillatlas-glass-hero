@@ -14,7 +14,7 @@ const CTASection = ({ onGetStarted }: CTASectionProps) => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="relative overflow-hidden rounded-3xl bg-primary p-12 md:p-20 text-center"
+        className="relative overflow-hidden rounded-3xl bg-[#0f2027] p-12 md:p-20 text-center"
       >
         <div className="absolute inset-0 bg-gradient-to-br from-secondary/30 to-transparent" />
         <div className="relative z-10">
@@ -24,7 +24,7 @@ const CTASection = ({ onGetStarted }: CTASectionProps) => (
           <p className="text-primary-foreground/80 max-w-xl mx-auto mb-10 text-lg">
             Join a thriving community of learners and unlock courses, mentorship, and career opportunities—completely free to start.
           </p>
-          <Button variant="cta" size="lg" className="text-lg px-10 py-6 gap-2" onClick={onGetStarted}>
+          <Button variant="cta" size="lg" className="text-lg px-10 py-6 gap-2 bg-[#2dd4bf] text-[#0f2027] hover:bg-[#2dd4bf]/90" onClick={onGetStarted}>
             Get Started for Free
             <ArrowRight size={20} />
           </Button>

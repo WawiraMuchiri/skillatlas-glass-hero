@@ -19,7 +19,7 @@ const HowItWorksSection = () => (
         transition={{ duration: 0.7 }}
         className="max-w-3xl mx-auto text-center mb-16"
       >
-        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-secondary mb-4">
+        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#2dd4bf] mb-4">
           How It Works
         </span>
         <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">
@@ -39,18 +39,18 @@ const HowItWorksSection = () => (
             <div className="flex items-start gap-5">
               {/* Timeline column */}
               <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground shrink-0 font-display font-bold text-sm">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#0f2027] border-2 border-[#2dd4bf] text-[#2dd4bf] shrink-0 font-display font-bold text-sm">
                   {i + 1}
                 </div>
                 {i < steps.length - 1 && (
-                  <div className="w-0.5 h-16 bg-border mt-2" />
+                  <div className="w-0.5 h-16 mt-2" style={{ background: 'rgba(45,212,191,0.3)' }} />
                 )}
               </div>
 
               {/* Content */}
               <div className="pb-12">
                 <div className="flex items-center gap-2 mb-1">
-                  <step.icon size={18} className="text-secondary" />
+                  <step.icon size={18} className="text-[#2dd4bf]" />
                   <h3 className="font-display text-lg font-semibold text-foreground">{step.title}</h3>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">{step.desc}</p>
