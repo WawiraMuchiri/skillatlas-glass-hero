@@ -86,7 +86,7 @@ const OurTeamSection = () => (
             ))}
           </div>
         </div>
-        <p className="mt-4 text-sm italic text-muted-foreground">
+        <p className="mt-4 text-sm italic text-white">
           The minds behind SkillAtlas
         </p>
       </motion.div>
