@@ -7,18 +7,21 @@ const testimonials = [
     role: "Software Engineer at Google",
     text: "SkillAtlas transformed my career trajectory. The structured programs and mentorship helped me land my dream role within 6 months.",
     rating: 5,
+    badge: "Hired in 3 months",
   },
   {
     name: "Marcus Johnson",
     role: "Data Analyst at Shopify",
     text: "The community here is incredible. I went from zero coding experience to a full-time data role. The courses are practical and industry-relevant.",
     rating: 5,
+    badge: "Offer in 2 months",
   },
   {
     name: "Priya Patel",
     role: "UX Designer at Figma",
     text: "What sets SkillAtlas apart is the real-world projects. I built a portfolio that actually impressed hiring managers. Worth every minute.",
     rating: 5,
+    badge: "Promoted in 4 months",
   },
 ];
 
@@ -60,6 +63,9 @@ const TestimonialsSection = () => (
               <p className="font-display font-semibold text-foreground">{t.name}</p>
               <p className="text-sm text-muted-foreground">{t.role}</p>
             </div>
+            <span className="inline-block mt-4 px-4 py-1.5 text-xs font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">
+              {t.badge}
+            </span>
           </motion.div>
         ))}
       </div>
