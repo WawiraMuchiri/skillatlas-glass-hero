@@ -45,7 +45,7 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
             <Button
               variant="cta"
               size="lg"
-              className="text-lg px-8 py-6 gap-2 shadow-[0_4px_20px_rgba(251,191,36,0.4)] hover:shadow-[0_6px_28px_rgba(251,191,36,0.5)]"
+              className="text-lg px-8 py-6 gap-2 shadow-[0_4px_20px_rgba(45,212,191,0.4)] hover:shadow-[0_6px_28px_rgba(45,212,191,0.5)]"
               onClick={onGetStarted}
             >
               Get Started for Free
