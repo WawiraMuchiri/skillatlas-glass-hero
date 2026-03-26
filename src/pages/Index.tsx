@@ -17,7 +17,7 @@ const Index = () => {
   const openSignUp = () => setSignUpOpen(true);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background mesh-gradient-bg">
       <Navbar onGetStarted={openSignUp} />
       <HeroSection onGetStarted={openSignUp} />
       <StatsSection />

@@ -54,10 +54,10 @@ const TestimonialsSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.15 }}
-            className="rounded-2xl p-8 hover:shadow-lg transition-shadow"
+            className="rounded-2xl p-8 hover:shadow-lg transition-shadow backdrop-blur-sm"
             style={{
               background: "rgba(255,255,255,0.06)",
-              border: "1px solid rgba(45,212,191,0.2)",
+              border: "1px solid rgba(45,212,191,0.20)",
             }}
           >
             <div className="flex gap-1 mb-4">
