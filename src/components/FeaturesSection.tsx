@@ -20,7 +20,7 @@ const FeaturesSection = () => (
         transition={{ duration: 0.7 }}
         className="max-w-3xl mx-auto text-center mb-16"
       >
-        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-secondary mb-4">
+        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#0f6e56] mb-4">
           Features
         </span>
         <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
