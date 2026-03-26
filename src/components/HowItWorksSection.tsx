@@ -50,7 +50,7 @@ const HowItWorksSection = () => (
               {/* Content */}
               <div className="pb-12">
                 <div className="flex items-center gap-2 mb-1">
-                  <step.icon size={18} className="text-secondary" />
+                  <step.icon size={18} className="text-[#2dd4bf]" />
                   <h3 className="font-display text-lg font-semibold text-foreground">{step.title}</h3>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">{step.desc}</p>

@@ -10,7 +10,7 @@ const WhySection = () => (
         transition={{ duration: 0.7 }}
         className="text-center mb-12"
       >
-        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-secondary mb-4">
+        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#0f6e56] mb-4">
           Our Mission
         </span>
         <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">
