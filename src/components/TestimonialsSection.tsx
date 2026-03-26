@@ -26,7 +26,7 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => (
-  <section className="py-24 bg-muted/30">
+  <section className="py-24 bg-[#0f2027]">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -35,10 +35,13 @@ const TestimonialsSection = () => (
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#2dd4bf] mb-4">
+          Success Stories
+        </span>
+        <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
           Trusted by Thousands of Learners
         </h2>
-        <p className="text-muted-foreground max-w-xl mx-auto">
+        <p className="text-[rgba(255,255,255,0.75)] max-w-xl mx-auto">
           Real stories from real people who transformed their careers with SkillAtlas.
         </p>
       </motion.div>
@@ -51,19 +54,23 @@ const TestimonialsSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.15 }}
-            className="bg-card rounded-2xl p-8 shadow-md border border-border hover:shadow-lg transition-shadow"
+            className="rounded-2xl p-8 hover:shadow-lg transition-shadow"
+            style={{
+              background: "rgba(255,255,255,0.06)",
+              border: "1px solid rgba(45,212,191,0.2)",
+            }}
           >
             <div className="flex gap-1 mb-4">
               {Array.from({ length: t.rating }).map((_, idx) => (
-                <Star key={idx} size={18} className="fill-accent text-accent" />
+                <Star key={idx} size={18} className="fill-[#2dd4bf] text-[#2dd4bf]" />
               ))}
             </div>
-            <p className="text-foreground/90 leading-relaxed mb-6 italic">"{t.text}"</p>
+            <p className="text-[rgba(255,255,255,0.75)] leading-relaxed mb-6 italic">"{t.text}"</p>
             <div>
-              <p className="font-display font-semibold text-foreground">{t.name}</p>
-              <p className="text-sm text-muted-foreground">{t.role}</p>
+              <p className="font-display font-semibold text-white">{t.name}</p>
+              <p className="text-sm text-[rgba(255,255,255,0.5)]">{t.role}</p>
             </div>
-            <span className="inline-block mt-4 px-4 py-1.5 text-xs font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">
+            <span className="inline-block mt-4 px-4 py-1.5 text-xs font-semibold rounded-full bg-[#2dd4bf]/10 text-[#2dd4bf] border border-[#2dd4bf]/20">
               {t.badge}
             </span>
           </motion.div>

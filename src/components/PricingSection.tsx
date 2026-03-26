@@ -27,7 +27,7 @@ const PricingSection = ({ onGetStarted }: PricingSectionProps) => {
   const [billing, setBilling] = useState<BillingPeriod>("monthly");
 
   return (
-    <section id="pricing" className="py-24 bg-muted/40">
+    <section id="pricing" className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ const PricingSection = ({ onGetStarted }: PricingSectionProps) => {
                 onClick={() => setBilling(o.key)}
                 className={`px-4 py-2 text-sm font-medium rounded-full transition-colors ${
                   billing === o.key
-                    ? "bg-primary text-primary-foreground"
+                    ? "bg-[#2dd4bf] text-[#0f2027]"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
@@ -82,13 +82,13 @@ const PricingSection = ({ onGetStarted }: PricingSectionProps) => {
               {["3 CV Optimizations/mo", "Basic Skill Mapping", "5 Job Matches/mo", "Weekly Market Trend Insights"].map(
                 (f) => (
                   <li key={f} className="flex items-start gap-2 text-sm text-foreground">
-                    <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                    <Check size={16} className="text-[#2dd4bf] mt-0.5 shrink-0" />
                     {f}
                   </li>
                 )
               )}
             </ul>
-            <Button variant="outline" className="w-full" onClick={onGetStarted}>
+            <Button variant="outline" className="w-full border-[#2dd4bf] text-[#0f6e56] hover:bg-[#f0fdfb]" onClick={onGetStarted}>
               Start Free
             </Button>
           </motion.div>
@@ -99,9 +99,9 @@ const PricingSection = ({ onGetStarted }: PricingSectionProps) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="relative rounded-2xl border-2 border-accent bg-card p-8 flex flex-col shadow-lg"
+            className="relative rounded-2xl border-2 border-[#2dd4bf] bg-[#f0fdfb] p-8 flex flex-col shadow-lg"
           >
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-xs font-bold px-4 py-1 rounded-full">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#2dd4bf] text-[#0f2027] text-xs font-bold px-4 py-1 rounded-full">
               Most Popular
             </div>
             <h3 className="font-display text-xl font-bold text-foreground mb-1">The Pro</h3>
@@ -111,7 +111,7 @@ const PricingSection = ({ onGetStarted }: PricingSectionProps) => {
               {billing === "monthly" && <span className="text-muted-foreground ml-1">/month</span>}
             </div>
             {billing !== "monthly" && (
-              <p className="text-accent text-sm font-semibold mb-6">{proPrice[billing].note}</p>
+              <p className="text-[#0f6e56] text-sm font-semibold mb-6">{proPrice[billing].note}</p>
             )}
             {billing === "monthly" && <div className="mb-6" />}
             <ul className="space-y-3 mb-10 flex-1">
@@ -123,12 +123,12 @@ const PricingSection = ({ onGetStarted }: PricingSectionProps) => {
                 "Priority Email Support",
               ].map((f) => (
                 <li key={f} className="flex items-start gap-2 text-sm text-foreground">
-                  <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                  <Check size={16} className="text-[#2dd4bf] mt-0.5 shrink-0" />
                   {f}
                 </li>
               ))}
             </ul>
-            <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" onClick={onGetStarted}>
+            <Button className="w-full bg-[#2dd4bf] text-[#0f2027] hover:bg-[#2dd4bf]/90" onClick={onGetStarted}>
               Go Pro
             </Button>
           </motion.div>
@@ -149,12 +149,12 @@ const PricingSection = ({ onGetStarted }: PricingSectionProps) => {
             <ul className="space-y-3 mb-10 flex-1">
               {["Bulk Student Onboarding", "Admin Analytics Dashboard", "Custom Branding", "API Access"].map((f) => (
                 <li key={f} className="flex items-start gap-2 text-sm text-foreground">
-                  <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                  <Check size={16} className="text-[#2dd4bf] mt-0.5 shrink-0" />
                   {f}
                 </li>
               ))}
             </ul>
-            <Button variant="outline" className="w-full">
+            <Button variant="outline" className="w-full border-[#2dd4bf] text-[#0f6e56] hover:bg-[#f0fdfb]">
               Contact Sales
             </Button>
           </motion.div>
