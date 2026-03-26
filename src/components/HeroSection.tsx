@@ -17,8 +17,9 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
         width={1920}
         height={1080}
       />
-      {/* Subtle overlay — keeps image vibrant */}
-      <div className="absolute inset-0 bg-primary/50" />
+      {/* Gradient overlay — darker on left for text, fading to reveal image */}
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/70 via-primary/40 to-primary/15" />
+      <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
 
       <div className="relative z-10 container mx-auto px-6 pt-28 pb-20">
         <motion.div
@@ -31,12 +32,12 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
             Join 10,000+ learners transforming their careers
           </span>
 
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
             Map Your Skills.{" "}
             <span className="text-primary-foreground">Chart Your Future.</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-10 font-body leading-relaxed drop-shadow-md">
+          <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-10 font-body leading-relaxed drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
             SkillAtlas connects you to world-class programs, curated courses, and real job opportunities—all in one platform designed for your growth.
           </p>
 
