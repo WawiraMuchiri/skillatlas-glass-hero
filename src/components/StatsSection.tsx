@@ -65,10 +65,10 @@ function StatCard({ icon: Icon, value, display, label, delay }: typeof stats[num
       transition={{ duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
       className="flex flex-col items-center gap-3 px-6 py-8"
     >
-      <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary">
+      <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-[#e1faf5] text-[#2dd4bf]">
         <Icon size={28} />
       </div>
-      <p className="font-display text-4xl md:text-5xl font-bold text-primary">
+      <p className="font-display text-4xl md:text-5xl font-bold text-[#0f2027]">
         {hasAnimated ? `${formatNumber(count)}+` : "0"}
       </p>
       <p className="text-muted-foreground text-sm font-medium tracking-wide uppercase">
