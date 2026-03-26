@@ -19,7 +19,7 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-foreground/5">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f2027] backdrop-blur-md border-b border-white/10">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <div className="mr-8">
           <BrandLogo />
@@ -30,12 +30,12 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm font-bold text-foreground/80 hover:text-foreground transition-colors"
+              className="text-sm font-bold text-white/65 hover:text-white transition-colors"
             >
               {item.label}
             </a>
           ))}
-          <Button variant="cta" size="sm" onClick={onGetStarted}>
+          <Button size="sm" className="bg-[#2dd4bf] text-[#0f2027] hover:bg-[#2dd4bf]/90 font-semibold" onClick={onGetStarted}>
             Get Started
           </Button>
         </div>
