@@ -57,7 +57,7 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
               {item.label}
             </a>
           ))}
-          <Button size="sm" className="w-full bg-[#2dd4bf] text-[#0f2027] hover:bg-[#2dd4bf]/90 font-semibold" onClick={() => { setOpen(false); onGetStarted(); }}>
+          <Button size="sm" className="w-full bg-[#fbbf24] text-[#0f2027] hover:bg-[#fbbf24]/90 font-semibold" onClick={() => { setOpen(false); onGetStarted(); }}>
             Get Started
           </Button>
         </div>
