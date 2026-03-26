@@ -33,7 +33,7 @@ const OurTeamSection = () => (
         transition={{ duration: 0.7, delay: 0.2 }}
         className="flex flex-col items-center"
       >
-        <div className="w-full max-w-md rounded-[10px] shadow-lg overflow-hidden" style={{ background: 'rgba(255,255,255,0.06)', border: '0.5px solid rgba(45,212,191,0.3)' }}>
+        <div className="w-full max-w-md rounded-[10px] shadow-lg overflow-hidden" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(45,212,191,0.2)' }}>
           <img
             src={foundingTeam}
             alt="The SkillAtlas Founding Team"
