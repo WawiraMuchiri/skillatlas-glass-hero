@@ -32,12 +32,12 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
             Join 10,000+ learners transforming their careers
           </span>
 
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
-            Map Your Skills.{" "}
-            <span className="text-primary-foreground">Chart Your Future.</span>
+          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight mb-6 drop-shadow-[0_3px_12px_rgba(0,0,0,0.5)]">
+            Map Your <span className="text-accent">Skills</span>.{" "}
+            Chart Your <span className="text-accent">Future</span>.
           </h1>
 
-          <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-10 font-body leading-relaxed drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
+          <p className="text-lg md:text-xl text-[#D1D5DB] max-w-2xl mx-auto mb-10 font-body leading-relaxed drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)]">
             SkillAtlas connects you to world-class programs, curated courses, and real job opportunities—all in one platform designed for your growth.
           </p>
 
@@ -45,7 +45,7 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
             <Button
               variant="cta"
               size="lg"
-              className="text-lg px-8 py-6 gap-2"
+              className="text-lg px-8 py-6 gap-2 text-white shadow-[0_4px_20px_rgba(34,197,94,0.4)] hover:shadow-[0_6px_28px_rgba(34,197,94,0.5)]"
               onClick={onGetStarted}
             >
               Get Started for Free
