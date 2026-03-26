@@ -24,7 +24,7 @@ const CTASection = ({ onGetStarted }: CTASectionProps) => (
           <p className="text-primary-foreground/80 max-w-xl mx-auto mb-10 text-lg">
             Join a thriving community of learners and unlock courses, mentorship, and career opportunities—completely free to start.
           </p>
-          <Button variant="cta" size="lg" className="text-lg px-10 py-6 gap-2 bg-[#2dd4bf] text-[#0f2027] hover:bg-[#2dd4bf]/90" onClick={onGetStarted}>
+          <Button variant="cta" size="lg" className="text-lg px-10 py-6 gap-2 bg-[#2dd4bf] text-[#0f2027] hover:bg-[#2dd4bf]/90 shadow-[0_0_20px_rgba(45,212,191,0.4)] hover:shadow-[0_0_30px_rgba(45,212,191,0.55)]" onClick={onGetStarted}>
             Get Started for Free
             <ArrowRight size={20} />
           </Button>

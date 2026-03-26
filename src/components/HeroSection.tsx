@@ -28,7 +28,7 @@ const HeroSection = ({ onGetStarted }: HeroSectionProps) => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-3xl mx-auto flex flex-col items-center"
         >
-          <span className="self-start rounded-full px-5 py-2 text-sm font-bold text-[#2dd4bf] border border-[#2dd4bf]/40 bg-white/5 backdrop-blur-sm mb-4">
+          <span className="self-start rounded-full px-5 py-2 text-sm font-bold text-[#2dd4bf] border border-[#2dd4bf]/40 bg-white/5 backdrop-blur-sm mb-4" style={{ fontFamily: 'var(--font-mono)' }}>
             Join 10,000+ learners transforming their careers
           </span>
 
