@@ -46,18 +46,18 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
       </div>
 
       {open && (
-        <div className="md:hidden glass-panel-strong px-6 pb-6 flex flex-col gap-4">
+        <div className="md:hidden bg-[#0f2027] px-6 pb-6 flex flex-col gap-4">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="text-sm font-medium text-foreground/80 hover:text-foreground"
+              className="text-sm font-medium text-white/65 hover:text-white"
               onClick={() => setOpen(false)}
             >
               {item.label}
             </a>
           ))}
-          <Button variant="cta" size="sm" className="w-full" onClick={() => { setOpen(false); onGetStarted(); }}>
+          <Button size="sm" className="w-full bg-[#2dd4bf] text-[#0f2027] hover:bg-[#2dd4bf]/90 font-semibold" onClick={() => { setOpen(false); onGetStarted(); }}>
             Get Started
           </Button>
         </div>
