@@ -1,12 +1,4 @@
 import { motion } from "framer-motion";
-import { Linkedin } from "lucide-react";
-import foundingTeam from "@/assets/founding-team.png";
-
-const founders = [
-  { name: "Linus Langat", url: "https://linkedin.com/in/linuslangat" },
-  { name: "Rosalyne Muchiri", url: "https://linkedin.com/in/rosalyne-muchiri-357050186" },
-  { name: "Peter Masudi", url: "https://linkedin.com/in/peter-kemei-71745b215" },
-];
 
 const WhySection = () => (
   <section id="about-us" className="py-24 bg-muted/50">
@@ -26,57 +18,20 @@ const WhySection = () => (
         </h2>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-        {/* Left — Image */}
-        <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="flex flex-col items-center order-2 md:order-1"
-        >
-          <div className="w-full max-w-md rounded-[10px] shadow-lg bg-white overflow-hidden">
-            <img
-              src={foundingTeam}
-              alt="The SkillAtlas Founding Team"
-              className="w-full h-auto object-cover block"
-            />
-            <div className="grid grid-cols-3 px-3 pb-6 mt-[-20px]">
-              {founders.map((f) => (
-                <a
-                  key={f.name}
-                  href={f.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1 text-[11px] font-semibold text-foreground hover:text-primary transition-colors text-center whitespace-nowrap"
-                >
-                  <Linkedin size={11} className="text-[#0A66C2] shrink-0" />
-                  {f.name}
-                </a>
-              ))}
-            </div>
-          </div>
-          <p className="mt-4 text-sm italic text-muted-foreground">
-            The minds behind SkillAtlas
-          </p>
-        </motion.div>
-
-        {/* Right — Text */}
-        <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="space-y-6 order-1 md:order-2"
-        >
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Too many people waste months learning skills that don't match what employers actually want. They follow outdated advice, random YouTube playlists, and course recommendations that lead nowhere.
-          </p>
-          <p className="text-lg text-foreground font-medium leading-relaxed">
-            SkillAtlas exists to fix that — by connecting your learning directly to real job market demand, so every hour you invest moves you closer to getting hired.
-          </p>
-        </motion.div>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        className="max-w-3xl mx-auto space-y-6"
+      >
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          Too many people waste months learning skills that don't match what employers actually want. They follow outdated advice, random YouTube playlists, and course recommendations that lead nowhere.
+        </p>
+        <p className="text-lg text-foreground font-medium leading-relaxed">
+          SkillAtlas exists to fix that — by connecting your learning directly to real job market demand, so every hour you invest moves you closer to getting hired.
+        </p>
+      </motion.div>
     </div>
   </section>
 );
