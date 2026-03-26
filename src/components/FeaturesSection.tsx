@@ -39,9 +39,9 @@ const FeaturesSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="rounded-2xl border border-border bg-card p-8 hover:shadow-lg transition-shadow"
+            className="rounded-2xl border border-[#c8f5ed] bg-card p-8 hover:shadow-lg transition-shadow"
           >
-            <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-secondary/10 text-secondary mb-5">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#e1faf5] text-[#2dd4bf] mb-5">
               <f.icon size={24} />
             </div>
             <h3 className="font-display text-lg font-semibold text-card-foreground mb-2">{f.title}</h3>
