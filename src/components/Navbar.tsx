@@ -35,7 +35,7 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
               {item.label}
             </a>
           ))}
-          <Button size="sm" className="bg-[#2dd4bf] text-[#0f2027] hover:bg-[#2dd4bf]/90 font-semibold" onClick={onGetStarted}>
+          <Button size="sm" className="bg-[#fbbf24] text-[#0f2027] hover:bg-[#fbbf24]/90 font-semibold" onClick={onGetStarted}>
             Get Started
           </Button>
         </div>
