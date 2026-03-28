@@ -22,7 +22,7 @@ const HowItWorksSection = () => (
         <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#2dd4bf] mb-4">
           How It Works
         </span>
-        <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">
+        <h2 className="font-display text-3xl md:text-5xl font-bold text-[#0f2027]">
           Get Started in 5 Simple Steps
         </h2>
       </motion.div>
