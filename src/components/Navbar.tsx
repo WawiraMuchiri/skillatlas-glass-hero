@@ -40,8 +40,8 @@ const Navbar = ({ onGetStarted }: NavbarProps) => {
           </Button>
         </div>
 
-        <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
-          {open ? <X size={24} /> : <Menu size={24} />}
+        <button className="md:hidden text-white" onClick={() => setOpen(!open)}>
+          {open ? <X size={28} strokeWidth={3} /> : <Menu size={28} strokeWidth={3} />}
         </button>
       </div>
 
