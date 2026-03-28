@@ -10,7 +10,7 @@ const steps = [
 ];
 
 const HowItWorksSection = () => (
-  <section id="how-it-works" className="min-h-screen flex items-center bg-muted/50 scroll-mt-20">
+  <section id="how-it-works" className="bg-muted/50 py-20 pt-24 scroll-mt-20">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 30 }}

@@ -11,7 +11,7 @@ const features = [
 ];
 
 const FeaturesSection = () => (
-  <section id="features" className="min-h-screen flex items-center bg-[#f8fffe] scroll-mt-20">
+  <section id="features" className="bg-[#f8fffe] py-20 pt-24 scroll-mt-20">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 30 }}

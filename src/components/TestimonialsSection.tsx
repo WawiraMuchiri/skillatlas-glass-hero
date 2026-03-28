@@ -26,7 +26,7 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => (
-  <section className="min-h-screen flex items-center bg-[#0f2027]">
+  <section id="success-stories" className="bg-[#0f2027] py-20 pt-24 scroll-mt-20">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}

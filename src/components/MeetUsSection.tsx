@@ -9,7 +9,7 @@ const founders = [
 ];
 
 const MeetUsSection = () => (
-  <section className="min-h-screen flex items-center bg-[#0f2027]">
+  <section className="bg-[#0f2027] py-20 pt-24">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
