@@ -7,7 +7,7 @@ interface CTASectionProps {
 }
 
 const CTASection = ({ onGetStarted }: CTASectionProps) => (
-  <section className="py-24">
+  <section className="min-h-screen flex items-center">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 30 }}

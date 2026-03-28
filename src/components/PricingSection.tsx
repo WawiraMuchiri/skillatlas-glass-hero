@@ -27,7 +27,7 @@ const PricingSection = ({ onGetStarted }: PricingSectionProps) => {
   const [billing, setBilling] = useState<BillingPeriod>("monthly");
 
   return (
-    <section id="pricing" className="py-24 bg-white">
+    <section id="pricing" className="min-h-screen flex items-center bg-white">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
