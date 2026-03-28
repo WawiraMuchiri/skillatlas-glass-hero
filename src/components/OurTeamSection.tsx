@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const OurTeamSection = () => (
-  <section id="our-team" className="pt-20 pb-16 bg-[#0f2027] scroll-mt-20">
+  <section id="our-team" className="min-h-screen flex items-center bg-[#0f2027] scroll-mt-20">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
