@@ -9,7 +9,7 @@ const founders = [
 ];
 
 const OurTeamSection = () => (
-  <section id="our-team" className="py-24 bg-[#0f2027]">
+  <section id="our-team" className="pt-20 pb-16 bg-[#0f2027] scroll-mt-20">
     <div className="container mx-auto px-6">
       {/* Mission / About content */}
       <motion.div
