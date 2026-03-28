@@ -7,6 +7,7 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import PricingSection from "@/components/PricingSection";
+import MeetUsSection from "@/components/MeetUsSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import SignUpModal from "@/components/SignUpModal";
@@ -27,13 +28,13 @@ const Index = () => {
         <TestimonialsSection />
       </div>
       <PricingSection onGetStarted={openSignUp} />
+      <MeetUsSection />
       <CTASection onGetStarted={openSignUp} />
       <Footer />
       <SignUpModal open={signUpOpen} onOpenChange={setSignUpOpen} />
     </div>
   );
 };
-
 
 export default Index;
 
