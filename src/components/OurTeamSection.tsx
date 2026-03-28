@@ -32,7 +32,7 @@ const OurTeamSection = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="max-w-3xl mx-auto space-y-6 mb-24"
+        className="max-w-3xl mx-auto space-y-6 mb-10"
       >
         <p className="text-lg text-[rgba(255,255,255,0.6)] leading-relaxed">
           Too many people waste months learning skills that don't match what employers actually want. They follow outdated advice, random YouTube playlists, and course recommendations that lead nowhere.
