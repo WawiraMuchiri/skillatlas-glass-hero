@@ -46,7 +46,7 @@ const Dashboard = () => {
   return (
     <div className="flex min-h-screen bg-[#f8fffe]">
       {/* Sidebar */}
-      <aside className="hidden md:flex flex-col w-64 bg-[#0f2027] text-white min-h-screen sticky top-0">
+      <aside className="hidden md:flex flex-col w-72 bg-[#0f2027] text-white min-h-screen sticky top-0">
         <div className="p-5 border-b border-white/10">
           <BrandLogo />
           <p className="text-xs text-white/50 mt-1">Career Intelligence</p>
