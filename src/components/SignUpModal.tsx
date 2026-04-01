@@ -24,6 +24,7 @@ const SignUpModal = ({ open, onOpenChange }: SignUpModalProps) => {
         onSubmit={(e) => {
           e.preventDefault();
           onOpenChange(false);
+          navigate("/dashboard");
         }}
       >
         <div className="space-y-2">
@@ -44,6 +45,7 @@ const SignUpModal = ({ open, onOpenChange }: SignUpModalProps) => {
       </form>
     </DialogContent>
   </Dialog>
-);
+  );
+};
 
 export default SignUpModal;
