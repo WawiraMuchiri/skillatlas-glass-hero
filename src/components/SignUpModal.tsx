@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,7 +9,10 @@ interface SignUpModalProps {
   onOpenChange: (open: boolean) => void;
 }
 
-const SignUpModal = ({ open, onOpenChange }: SignUpModalProps) => (
+const SignUpModal = ({ open, onOpenChange }: SignUpModalProps) => {
+  const navigate = useNavigate();
+
+  return (
   <Dialog open={open} onOpenChange={onOpenChange}>
     <DialogContent className="sm:max-w-md">
       <DialogHeader>
@@ -20,6 +24,7 @@ const SignUpModal = ({ open, onOpenChange }: SignUpModalProps) => (
         onSubmit={(e) => {
           e.preventDefault();
           onOpenChange(false);
+          navigate("/dashboard");
         }}
       >
         <div className="space-y-2">
@@ -40,6 +45,7 @@ const SignUpModal = ({ open, onOpenChange }: SignUpModalProps) => (
       </form>
     </DialogContent>
   </Dialog>
-);
+  );
+};
 
 export default SignUpModal;
