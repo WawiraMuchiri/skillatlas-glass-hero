@@ -54,7 +54,7 @@ const Dashboard = () => {
 
         <div className="px-4 py-4 border-b border-white/10">
           <p className="text-[10px] uppercase tracking-wider text-white/40 mb-1">Account</p>
-          <p className="text-sm font-medium text-white/90">jacob.makau@gmail.com</p>
+          <p className="text-sm font-medium text-white/90">rosalyne@gmail.com</p>
           <p className="text-xs text-[#2dd4bf]">Target: Software Architect</p>
         </div>
 
