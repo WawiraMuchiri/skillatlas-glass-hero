@@ -40,7 +40,8 @@ const missingSkills = ["database design", "agile methods", "cloud platforms"];
 const Dashboard = () => {
   const navigate = useNavigate();
   const [notifVisible, setNotifVisible] = useState(true);
-  const userName = "Jacob";
+  const userName = "Rosalyne";
+  const userInitials = "RM";
 
   return (
     <div className="flex min-h-screen bg-[#f8fffe]">
