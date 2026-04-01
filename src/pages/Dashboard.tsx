@@ -40,12 +40,13 @@ const missingSkills = ["database design", "agile methods", "cloud platforms"];
 const Dashboard = () => {
   const navigate = useNavigate();
   const [notifVisible, setNotifVisible] = useState(true);
-  const userName = "Jacob";
+  const userName = "Rosalyne";
+  const userInitials = "RM";
 
   return (
     <div className="flex min-h-screen bg-[#f8fffe]">
       {/* Sidebar */}
-      <aside className="hidden md:flex flex-col w-64 bg-[#0f2027] text-white min-h-screen sticky top-0">
+      <aside className="hidden md:flex flex-col w-72 bg-[#0f2027] text-white min-h-screen sticky top-0">
         <div className="p-5 border-b border-white/10">
           <BrandLogo />
           <p className="text-xs text-white/50 mt-1">Career Intelligence</p>
@@ -53,7 +54,7 @@ const Dashboard = () => {
 
         <div className="px-4 py-4 border-b border-white/10">
           <p className="text-[10px] uppercase tracking-wider text-white/40 mb-1">Account</p>
-          <p className="text-sm font-medium text-white/90">jacob.makau@gmail.com</p>
+          <p className="text-sm font-medium text-white/90">rosalyne@gmail.com</p>
           <p className="text-xs text-[#2dd4bf]">Target: Software Architect</p>
         </div>
 
@@ -109,7 +110,7 @@ const Dashboard = () => {
               <span className="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-[#fbbf24] rounded-full border-2 border-white" />
             </button>
             <div className="w-9 h-9 rounded-full bg-[#0f2027] flex items-center justify-center text-white text-xs font-bold">
-              JM
+              {userInitials}
             </div>
           </div>
         </header>
